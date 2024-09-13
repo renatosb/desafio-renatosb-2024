@@ -12,6 +12,7 @@ class RecintosZoo {
             if(isNaN(quantidade) || ( isFinite(quantidade) && quantidade <= 0))
                 throw "Quantidade inválida"
 
+            
             return servicesZoo.filtraRescintos(animal, quantidade)
             
         } catch (error) {
@@ -21,7 +22,5 @@ class RecintosZoo {
         }
     }
 }
-
-console.log(new RecintosZoo().analisaRecintos("MACACO", 1))
 
 export { RecintosZoo as RecintosZoo };

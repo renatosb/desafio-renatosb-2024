@@ -1,5 +1,5 @@
 //Enums
-export const Especies = Object.freeze({
+const Especies = Object.freeze({
     LEAO: "LEAO",
     LEOPARDO: "LEOPARDO",
     CROCODILO: "CROCODILO",
@@ -8,7 +8,7 @@ export const Especies = Object.freeze({
     HIPOPOTAMO: "HIPOPOTAMO"
 })
 
-const Biomas = Object.freeze({
+export const Biomas = Object.freeze({
     SAVANA: "savana",
     FLORESTA: "floresta",
     RIO: "rio"
@@ -18,19 +18,6 @@ export const Alimentacao = Object.freeze({
     CARNIVORO: "carnívoro",
     ONIVORO: "onívoro",
     HERBIVORO: "herbívoro"
-})
-
-export const Regras = Object.freeze({
-    BIOMA_ADEQUADO: 1,
-    CONFORTO_PRESERVADO: 2,
-    DIVERSIDADE: 3,
-    FRATERNIDADE: 4
-})
-
-export const Restricoes = Object.freeze({
-    CARNIVORO_UNICO: 1,
-    HIPOPOTAMO_TERRITORIAL: 2,
-    MACACO_SOLITARIO: 3
 })
 //---- FIM Enums ----
 
@@ -64,7 +51,7 @@ export const Animais = Object.freeze({
         ESPECIE: Especies.LEAO,
         TAMANHO: 2,
         BIOMA: Biomas.SAVANA,
-        ALIMENTACAO: Alimentacao.CARNIVORO,
+        ALIMENTACAO: Alimentacao.HERBIVORO,
     },
     HIPOPOTAMO: {
         ESPECIE: Especies.LEAO,
